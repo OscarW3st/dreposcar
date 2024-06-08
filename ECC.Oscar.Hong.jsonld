@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIPQQQ": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-QQQ/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIPQQQ:body",
+      "@context": {
+        "references": {
+          "@id": "CIPQQQ:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIPQQQ:referenceHash",
+              "@context": {
+                "hashDigest": "CIPQQQ:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "dRepName": "CIPQQQ:dRepName",
+        "bio": "CIPQQQ:bio",
+        "email": "CIPQQQ:email"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Eastern Cardano Council\nSeoul, South Korea\n\n-Cardano Ambassador (Meetup Organizer, South Korea)\n-CIP1694 Global Community Workshop Facilitator (South Korea)\n-Cardano Summit 2022, 2023 CLE Host (Seoul, South Korea)\n-IntersectMBO, Governance Parameters WG\n-Hosted a Drep Workshop in South Korea(2024.04)\n-Utilising Korean social media to run a Cardano community.\n"
+    },
+    "dRepName": {
+      "@value": "ECC.Oscar.Hong"
+    },
+    "email": {
+      "@value": "jungi99927@gmail.com"
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "CIPQQQ:reference-label": {
+          "@value": "Label"
+        },
+        "CIPQQQ:reference-uri": {
+          "@value": "https://x.com/OscarW3st"
+        }
+      }
+    ]
+  }
+}
